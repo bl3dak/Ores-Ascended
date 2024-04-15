@@ -1,6 +1,11 @@
 package io.github.bl3dak.oresascended.init;
 
+import com.mojang.datafixers.types.templates.Tag;
 import io.github.bl3dak.oresascended.OresAscended;
+import net.minecraft.resources.ResourceLocation;
+import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
+import net.minecraft.tags.TagKey;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -66,6 +71,16 @@ public class BlockInit {
             new Item.Properties()
                     .tab(OresAscended.TAB));
 
+
+    public static class Tags {
+        public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = create("needs_sapphire_tool");
+
+        public static final TagKey<Block> NEEDS_TOURMALINE_TOOL = create("needs_tourmaline_tool");
+
+        private static TagKey<Block> create(String location) {
+            return BlockTags.create(new ResourceLocation(OresAscended.MODID, location));
+        }
+    }
 
     private static <T extends Block> RegistryObject<T> register(String name, Supplier<T> supplier, Item.Properties properties){
         RegistryObject<T> block = BLOCKS.register(name, supplier);

@@ -73,7 +73,7 @@ public class ItemInit {
                 15f,
                 5f,
                 22,
-                null,
+                BlockInit.Tags.NEEDS_SAPPHIRE_TOOL,
                 () -> Ingredient.of(ItemInit.SAPPHIRE.get()));
 
         public static final Tier TOURMALINE = new ForgeTier(
@@ -82,7 +82,7 @@ public class ItemInit {
                 16f,
                 6f,
                 20,
-                null,
+                BlockInit.Tags.NEEDS_TOURMALINE_TOOL,
                 () -> Ingredient.of(ItemInit.TOURMALINE.get()));
     }
 
@@ -136,7 +136,6 @@ public class ItemInit {
                 () -> Ingredient.of(ItemInit.TOURMALINE.get())
         );
     }
-
 
 
 
