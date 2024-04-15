@@ -1,0 +1,22 @@
+
+modLoader="javafml"
+
+loaderVersion="[41,)"
+
+license="MIT"
+
+[[mods]]
+
+modId="oresascended"
+
+version="0.1"
+
+displayName="Ores Ascended"
+logoFile="examplemod.png"
+
+credits="Sonata"
+
+authors="Sonata"
+
+description='''A mod about the power of Ores!'''
+

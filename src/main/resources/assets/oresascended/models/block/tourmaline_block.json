@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "oresascended:blocks/tourmaline_block"
+  }
+}

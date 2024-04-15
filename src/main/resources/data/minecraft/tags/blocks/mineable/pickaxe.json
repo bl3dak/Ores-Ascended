@@ -1,0 +1,12 @@
+{
+  "replace": false,
+  "values": [
+    "oresascended:sapphire_block",
+    "oresascended:sapphire_ore",
+    "oresascended:deepslate_sapphire_ore",
+
+    "oresascended:tourmaline_block",
+    "oresascended:tourmaline_ore",
+    "oresascended:deepslate_tourmaline_ore"
+  ]
+}

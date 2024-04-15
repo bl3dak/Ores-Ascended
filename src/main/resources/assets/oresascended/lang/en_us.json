@@ -1,0 +1,29 @@
+{
+  "itemGroup.oresascended" : "Ores Ascended",
+
+  "item.oresascended.sapphire": "Sapphire",
+  "item.oresascended.tourmaline": "Tourmaline",
+
+  "item.oresascended.sapphire_sword": "Sapphire Sword",
+  "item.oresascended.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.oresascended.sapphire_axe": "Sapphire Axe",
+  "item.oresascended.sapphire_shovel": "Sapphire Shovel",
+  "item.oresascended.sapphire_hoe": "Sapphire Hoe",
+
+  "item.oresascended.tourmaline_sword": "Tourmaline Sword",
+  "item.oresascended.tourmaline_pickaxe": "Tourmaline Pickaxe",
+  "item.oresascended.tourmaline_axe": "Tourmaline Axe",
+  "item.oresascended.tourmaline_shovel": "Tourmaline Shovel",
+  "item.oresascended.tourmaline_hoe": "Tourmaline Hoe",
+
+  "item.oresascended.sapphire_apple": "Sapphire Apple",
+  "item.oresascended.tourmaline_apple": "Tourmaline Apple",
+
+  "block.oresascended.sapphire_block": "Block of Sapphire",
+  "block.oresascended.tourmaline_block": "Block of Tourmaline",
+
+  "block.oresascended.sapphire_ore": "Sapphire Ore",
+  "block.oresascended.deepslate_sapphire_ore": "Deepslate Sapphire Ore",
+  "block.oresascended.tourmaline_ore": "Tourmaline Ore",
+  "block.oresascended.deepslate_tourmaline_ore": "Deepslate Tourmaline Ore"
+}
