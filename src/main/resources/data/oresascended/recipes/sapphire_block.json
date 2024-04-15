@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "oresascended:sapphire"
+    }
+  },
+  "result": {
+    "item": "oresascended:sapphire_block"
+  }
+}

@@ -2,6 +2,7 @@ package io.github.bl3dak.oresascended.init;
 
 import io.github.bl3dak.oresascended.OresAscended;
 import io.github.bl3dak.oresascended.base.ModArmorMaterial;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffectInstance;
@@ -11,9 +12,12 @@ import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraftforge.common.ForgeTier;
+import net.minecraftforge.common.TierSortingRegistry;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+
+import java.util.List;
 
 public class ItemInit {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, OresAscended.MODID);
@@ -67,23 +71,29 @@ public class ItemInit {
 
 
     public static class ToolTiers {
-        public static final Tier SAPPHIRE = new ForgeTier(
-                5,
-                800,
-                15f,
-                5f,
-                22,
+        public static final Tier SAPPHIRE = TierSortingRegistry.registerTier(new ForgeTier(
+                    5,
+                    800,
+                    15f,
+                    5f,
+                    22,
                 BlockInit.Tags.NEEDS_SAPPHIRE_TOOL,
-                () -> Ingredient.of(ItemInit.SAPPHIRE.get()));
+                () -> Ingredient.of(ItemInit.SAPPHIRE.get())),
+                new ResourceLocation(OresAscended.MODID, "sapphire"),
+                List.of(Tiers.NETHERITE),
+                List.of());
 
-        public static final Tier TOURMALINE = new ForgeTier(
-                6,
-                4062,
-                16f,
-                6f,
-                20,
+        public static final Tier TOURMALINE = TierSortingRegistry.registerTier(new ForgeTier(
+                    6,
+                    4062,
+                    16f,
+                    6f,
+                    20,
                 BlockInit.Tags.NEEDS_TOURMALINE_TOOL,
-                () -> Ingredient.of(ItemInit.TOURMALINE.get()));
+                () -> Ingredient.of(ItemInit.TOURMALINE.get())),
+                new ResourceLocation(OresAscended.MODID, "tourmaline"),
+                List.of(ToolTiers.SAPPHIRE),
+                List.of());
     }
 
 
